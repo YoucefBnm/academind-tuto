@@ -1,7 +1,26 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import Person from './Person/Person'
-class App extends Component {
+class App extends React.Component {
+  /* Functional component react-hooks (state in functinal component)
+  // const [ personsState, setPersonsState ] = useState({
+  //     persons: [
+  //       { name: 'Josef', age: 29 },
+  //       { name: 'Elean', age: 33 },
+  //       { name: 'Jolanda', age: 44 }
+  //     ]
+  //   })
+
+     const switchNameHandler = () => {
+    setPersonsState({
+      persons: [
+        { name: 'Youcef Bnm', age: 30 },
+        { name: 'Elean', age: 33 },
+        { name: 'Jolanda', age: 44 }
+      ]
+    })
+  }
+  */
   state = {
     persons: [
       { name: 'Josef', age: 29 },
